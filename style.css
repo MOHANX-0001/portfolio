@@ -785,17 +785,27 @@ footer {
   .about-stats { grid-template-columns: 1fr 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
 }
-
-/* Dark Mode */
-body.dark {
-  background-color: #121212;
-  color: #ffffff;
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
 }
 
-body.dark nav {
-  background-color: #1e1e1e;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-body.dark a {
-  color: #ffffff;
+/* Hover Effects */
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
 }

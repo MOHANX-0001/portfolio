@@ -213,16 +213,19 @@ window.addEventListener('scroll', () => {
   });
 
 });
+const fadeElements = document.querySelectorAll('.fade-in');
 
-const toggleBtn = document.getElementById("theme-toggle");
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
 
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  // Change icon
-  if (document.body.classList.contains("dark")) {
-    toggleBtn.textContent = "☀️";
-  } else {
-    toggleBtn.textContent = "🌙";
-  }
+fadeElements.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(20px)";
+  fadeObserver.observe(el);
 });

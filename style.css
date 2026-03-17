@@ -785,3 +785,27 @@ footer {
   .about-stats { grid-template-columns: 1fr 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
 }
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Effects */
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}

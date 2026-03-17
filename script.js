@@ -213,3 +213,19 @@ window.addEventListener('scroll', () => {
   });
 
 });
+const fadeElements = document.querySelectorAll('.fade-in');
+
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+fadeElements.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(20px)";
+  fadeObserver.observe(el);
+});

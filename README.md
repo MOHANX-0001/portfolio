@@ -216,7 +216,7 @@ Loni Bk, Maharashtra, India
 | 📞 Phone | +91 93568 73688 |
 | ✉️ Email | mohanpawarx1010@gmail.com |
 | 🐙 GitHub | [github.com/MOHANX-0001](https://github.com/MOHANX-0001) |
-| 💼 LinkedIn | [linkedin.com/in/mohan-pawar-7ba025348](https://www.linkedin.com/in/mohan-pawar-7ba025348/) |
+| 💼 LinkedIn | [linkedin.com/in/mohan-pawar-dev](www.linkedin.com/in/mohan-pawar-dev) |
 
 ---
 

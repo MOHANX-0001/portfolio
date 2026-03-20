@@ -1,16 +1,16 @@
 <div align="center">
 
-# 🚀 Mohan Pawar — Developer Portfolio
+# 🚀 Mohan Pawar — Developer Portfolio v2
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-mohanx--0001.github.io-6366f1?style=for-the-badge)](https://mohanx-0001.github.io)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-mohanx--0001.github.io-f97316?style=for-the-badge)](https://mohanx-0001.github.io)
 [![GitHub](https://img.shields.io/badge/GitHub-MOHANX--0001-181717?style=for-the-badge&logo=github)](https://github.com/MOHANX-0001)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mohan--pawar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohan-pawar-7ba025348/)
 [![Email](https://img.shields.io/badge/Email-mohanpawarx1010@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:mohanpawarx1010@gmail.com)
 
 <br/>
 
-> **Personal portfolio website** — built from scratch using pure HTML, CSS & JavaScript.  
-> Clean design · Smooth animations · Fully responsive · EmailJS contact form.
+> **Personal portfolio website v2** — rebuilt from scratch with a bold new design system.  
+> Orange-dark aesthetic · Animated hero with photo · Featured project showcase · Fully responsive · EmailJS contact form.
 
 <br/>
 
@@ -24,6 +24,7 @@
 
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
+- [What's New in v2](#-whats-new-in-v2)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
@@ -38,11 +39,12 @@
 
 ## 🧠 Overview
 
-This is my **personal developer portfolio** — a fully hand-coded website with zero frameworks or build tools. Every pixel was deliberately crafted to reflect my approach to software: clean, purposeful, and built to last.
+This is my **personal developer portfolio v2** — a fully hand-coded website with zero frameworks or build tools. Completely redesigned with a bold orange-on-dark aesthetic, your photo front and center in the hero, and a featured project showcase. Every detail was intentionally crafted to make a strong first impression on recruiters and collaborators.
 
 The site is designed to:
-- Present my skills and background to recruiters and collaborators
-- Showcase my key projects with real GitHub links
+- Make an immediate visual impact with a distinctive design identity
+- Present my skills and background in a clean, scannable layout
+- Showcase all 6 projects — including a featured highlight card
 - Allow visitors to reach me directly via a working contact form
 - Work beautifully on any device, from mobile to desktop
 
@@ -54,19 +56,38 @@ The site is designed to:
 
 ---
 
+## ✨ What's New in v2
+
+| Change | Details |
+|---|---|
+| **New Color System** | Bold orange (`#f97316`) accent replacing purple — more distinctive and memorable |
+| **New Fonts** | `Outfit` for body + `JetBrains Mono` for code/labels — feels authentic to a developer |
+| **Hero Photo** | Profile photo now front-and-center in the hero with a spinning conic gradient ring |
+| **Live Code Snippet** | Java code card in the hero section — adds developer personality |
+| **Featured Project Card** | Library Management System highlighted with a full-width card + code preview |
+| **Animated Counters** | Stats (6+ projects, 7+ technologies) count up when scrolled into view |
+| **Section Numbering** | Projects numbered 01–06 for editorial structure |
+| **Education Timeline** | Redesigned with glowing dot timeline layout |
+| **Currently Learning** | New card in About showing React, Node.js, DSA, System Design, Spring Boot |
+| **Deeper Dark Theme** | Background deepened to `#07070d` for stronger contrast |
+
+---
+
 ## ✨ Features
 
 | Feature | Details |
 |---|---|
 | **Typing Animation** | Auto-cycling role titles in the hero section |
 | **Scroll Reveal** | Elements animate in as you scroll using `IntersectionObserver` |
-| **Responsive Navigation** | Hamburger menu for mobile, shrinks on scroll |
-| **Active Nav Highlighting** | Nav link highlights based on current scroll position |
+| **Counter Animation** | Stats count up from zero when they enter the viewport |
+| **Spinning Photo Ring** | Conic gradient ring animates around the hero profile photo |
+| **Responsive Navigation** | Hamburger menu for mobile, shrinks + darkens on scroll |
+| **Active Nav Highlighting** | Nav link turns orange based on current scroll section |
 | **EmailJS Contact Form** | Fully functional — messages land directly in inbox |
 | **Honeypot Bot Protection** | Hidden field catches spam bots before submission |
 | **Resume Download** | One-click PDF download of latest resume |
 | **SEO Optimized** | Meta tags, Open Graph (LinkedIn/WhatsApp), Twitter Card |
-| **Favicon** | Custom SVG favicon with brand initial |
+| **Custom Favicon** | SVG favicon with orange brand initial |
 | **Fully Responsive** | Mobile-first layout, tested across screen sizes |
 | **Performance** | No frameworks, no bloat — pure vanilla stack |
 
@@ -76,9 +97,9 @@ The site is designed to:
 
 ```
 Frontend    →  HTML5 · CSS3 · Vanilla JavaScript (ES6+)
-Fonts       →  Google Fonts — Syne + DM Mono
+Fonts       →  Google Fonts — Syne + Outfit + JetBrains Mono
 Email       →  EmailJS (client-side email SDK)
-Animations  →  CSS transitions + IntersectionObserver API
+Animations  →  CSS transitions + IntersectionObserver API + CSS @keyframes
 Hosting     →  GitHub Pages
 ```
 
@@ -93,9 +114,9 @@ Just clean, handwritten code.
 portfolio/
 │
 ├── index.html              # Main HTML — all sections
-├── style.css               # All styles — layout, animations, themes
-├── script.js               # All JS — typing, scroll, nav, form logic
-├── mohan-photo.png         # Profile photo (About section)
+├── style.css               # All styles — design system, layout, animations
+├── script.js               # All JS — typing, counters, scroll, nav, form
+├── mohan-photo.png         # Profile photo (hero + about)
 └── Mohan_Pawar_Resume.pdf  # Resume (triggered on download button)
 ```
 
@@ -104,27 +125,28 @@ portfolio/
 ## 📄 Sections
 
 ### 🏠 Hero
-Full-screen landing section with name, animated role titles (Java Backend Developer · CS Student · Problem Solver · Open Source Enthusiast · Building Real Systems), CTA buttons, and social links.
+Full-viewport landing with profile photo (spinning gradient ring), animated typing roles, a live Java code snippet card, availability status badge, CTA buttons, and inline social links.
 
 ### 👤 About
-Personal intro, education timeline (BSc CS @ SPPU · Class XII @ Shree Ganesh Vidya Mandir), and a quick-stats strip (Projects · Technologies · Problems Solved · Availability status).
+Personal intro with education timeline (BSc CS @ SPPU · Class XII @ Shree Ganesh Vidya Mandir), animated stats strip (6+ Projects · 7+ Technologies · ∞ Problems to Solve · Open to Opportunities), Currently Learning card, and Languages card.
 
 ### ⚡ Skills
-Visual skill grid covering:
+Six skill cards with icon headers covering:
 - **Languages** — Java, Python, JavaScript, C, SQL
-- **Web** — HTML, CSS, DOM, Responsive Design
-- **Database** — MySQL, JDBC
-- **Concepts** — OOP, Data Structures, File Handling, Collections
-- **Learning** — React.js, Node.js, REST APIs, DSA, System Design
+- **Web Development** — HTML5, CSS3, JavaScript, React.js, Responsive Design
+- **Backend & Database** — MySQL, JDBC, Node.js, REST APIs, File I/O
+- **Tools & Platforms** — Git, GitHub, VS Code, IntelliJ IDEA, Linux
+- **CS Fundamentals** — OOP, Data Structures, Algorithms, DBMS, OS
+- **Soft Skills** — Problem Solving, Team Work, Communication, Fast Learner
 
 ### 🗂️ Projects
-Six highlighted projects, each with tech badges, description, and GitHub links (see below).
+**One featured project** (Library Management System) in a full-width card with a code preview block, followed by **five project cards** in a responsive grid — each numbered, with tech badges and GitHub links.
 
 ### 📬 Contact
 Two-column layout — contact info on the left, working EmailJS form on the right. Responds within 24 hours.
 
 ### 🦶 Footer
-Minimal footer with GitHub and LinkedIn links.
+Brand logo, tagline, navigation links, and copyright.
 
 ---
 
@@ -132,14 +154,14 @@ Minimal footer with GitHub and LinkedIn links.
 
 | # | Project | Tech | Highlights |
 |---|---|---|---|
-| 1 | **Library Management System** | Java · OOP · File Handling | Role-based login, book issue/return, auto fine calculation |
-| 2 | **Student Management System** | Java · MySQL · JDBC | Full CRUD, auto ID generation, grade & attendance tracking |
-| 3 | **Java To-Do List App** | Java · OOP · File Handling | Priority tasks, categories, stats dashboard, file persistence |
-| 4 | **Bank Management System** | Java · OOP | Account creation, deposits, withdrawals, balance inquiry |
-| 5 | **Scientific Calculator** | HTML · CSS · JS · DOM | Arithmetic + trig + logarithms, keyboard input, clean UI |
-| 6 | **Weather Dashboard** | JS · REST API · Fetch · CSS Grid | OpenWeatherMap integration, 5-day forecast, geolocation |
+| ⭐ 01 | **Library Management System** | Java · OOP · File Handling | Role-based login, book issue/return, auto fine calculation — **Featured** |
+| 02 | **Bank Management System** | Java · OOP · File I/O | Account creation, deposits, withdrawals, PIN auth, transaction history |
+| 03 | **Student Management System** | Java · MySQL · JDBC | Full CRUD, auto ID generation, grade & attendance tracking, data export |
+| 04 | **Java To-Do List App** | Java · OOP · Collections | Priority tasks, categories, stats dashboard, file persistence |
+| 05 | **Scientific Calculator** | HTML · CSS · JS · DOM | Arithmetic + trig + logarithms, keyboard input, clean UI — Live Demo |
+| 06 | **Weather Dashboard** | JS · REST API · Fetch · CSS Grid | OpenWeatherMap integration, 5-day forecast, geolocation — New |
 
-> 🔗 All projects live at: [github.com/MOHANX-0001](https://github.com/MOHANX-0001)
+> 🔗 All projects: [github.com/MOHANX-0001](https://github.com/MOHANX-0001)
 
 ---
 
@@ -155,7 +177,7 @@ To configure it for your own use:
 4. Replace these values in `script.js`:
 
 ```js
-// Line 3 — your public key
+// Top of file — your public key
 emailjs.init("YOUR_PUBLIC_KEY");
 
 // Inside handleSubmit()
@@ -216,11 +238,7 @@ Loni Bk, Maharashtra, India
 | 📞 Phone | +91 93568 73688 |
 | ✉️ Email | mohanpawarx1010@gmail.com |
 | 🐙 GitHub | [github.com/MOHANX-0001](https://github.com/MOHANX-0001) |
-| 💼 LinkedIn | [linkedin.com/in/mohan-pawar-dev](www.linkedin.com/in/mohan-pawar-dev) |
-
----
-
-<img width="1919" height="1026" alt="image" src="https://github.com/user-attachments/assets/851dfd25-9f38-414f-8444-e9f46106338d" />
+| 💼 LinkedIn | [linkedin.com/in/mohan-pawar-7ba025348](https://www.linkedin.com/in/mohan-pawar-dev/) |
 
 ---
 

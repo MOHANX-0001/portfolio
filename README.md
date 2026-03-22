@@ -9,7 +9,7 @@
 
 <br/>
 
-> **Personal portfolio website v2** — rebuilt from scratch with a bold new design system.  
+> **Personal portfolio website v2** — rebuilt from scratch with a bold new design system. 
 > Orange-dark aesthetic · Animated hero with photo · Featured project showcase · Fully responsive · EmailJS contact form.
 
 <br/>

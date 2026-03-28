@@ -81,7 +81,7 @@
         LinkedIn
       </a>
       <span class="social-sep">·</span>
-      <a href="mailto:mohanpawarx1010@gmail.com" title="Email">
+      <a href="/cdn-cgi/l/email-protection#5c3133343d322c3d2b3d2e246d6c6d6c1c3b313d3530723f3331" title="Email">
         <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
         Email
       </a>
@@ -130,11 +130,11 @@
 
         <div class="about-stats">
           <div class="stat-item reveal">
-            <div class="stat-n" data-target="6">0</div>
+            <div class="stat-n" data-target="7">0</div>
             <div class="stat-l">Projects Built</div>
           </div>
           <div class="stat-item reveal">
-            <div class="stat-n" data-target="7">0</div>
+            <div class="stat-n" data-target="10">0</div>
             <div class="stat-l">Technologies</div>
           </div>
           <div class="stat-item reveal">
@@ -251,11 +251,14 @@
         </div>
         <h3 class="skill-card-title">Backend & Database</h3>
         <div class="skill-pills">
+          <span class="pill primary">Node.js</span>
+          <span class="pill primary">Express</span>
           <span class="pill primary">MySQL</span>
-          <span class="pill primary">JDBC</span>
-          <span class="pill">Node.js</span>
+          <span class="pill primary">PostgreSQL</span>
+          <span class="pill">Prisma ORM</span>
+          <span class="pill">JDBC</span>
           <span class="pill">REST APIs</span>
-          <span class="pill">File I/O</span>
+          <span class="pill">JWT Auth</span>
         </div>
       </div>
 
@@ -316,14 +319,14 @@
 
     <!-- Featured Project -->
     <div class="project-featured-card reveal">
-      <div class="pf-label">Featured Project</div>
+      <div class="pf-label">⭐ Featured Project</div>
       <div class="pf-body">
         <div class="pf-info">
           <div class="pf-number">01</div>
-          <h3 class="pf-title">Library Management System</h3>
-          <p class="pf-desc">A full-featured library management application with role-based access control for admin and students. Includes book issue &amp; return management with automatic fine calculation, intelligent search, and complete transaction tracking — all persisted through Java's file handling.</p>
+          <h3 class="pf-title">NexVault — Smart Finance &amp; Wealth Management Platform</h3>
+          <p class="pf-desc">A full-stack FinTech web application for personal finance management. Lets users track income, expenses, accounts, budgets and savings goals with real-time charts and analytics. Features JWT auth with refresh token rotation, a PostgreSQL + Prisma ORM backend with 7 REST API modules, interactive Recharts dashboard, dark/light theme toggle, notification system, and graceful mock data fallback when the backend is unavailable.</p>
           <div class="pf-techs">
-            <span>Java</span><span>OOP</span><span>File Handling</span><span>Role-Based Access</span>
+            <span>React.js</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma ORM</span><span>JWT</span><span>Recharts</span><span>Vite</span>
           </div>
           <div class="pf-links">
             <a href="https://github.com/MOHANX-0001" target="_blank" class="pf-link-btn">
@@ -334,15 +337,17 @@
         </div>
         <div class="pf-visual">
           <div class="pf-code-block">
-<pre><span class="code-c">// Admin can issue books</span>
-<span class="code-k">Book</span> b = library.search(<span class="code-s">"Clean Code"</span>);
-<span class="code-k">if</span> (b.isAvailable()) {
-  library.issue(b, student);
-  System.out.println(<span class="code-s">"Issued ✓"</span>);
-} <span class="code-k">else</span> {
-  <span class="code-k">int</span> fine = b.calculateFine();
-  System.out.println(<span class="code-s">"Fine: ₹"</span> + fine);
-}</pre>
+<pre><span class="code-c">// JWT auth with refresh rotation</span>
+<span class="code-k">const</span> token = jwt.sign(
+  { userId: user.id },
+  process.env.JWT_SECRET,
+  { expiresIn: <span class="code-s">'15m'</span> }
+);
+<span class="code-c">// Prisma ORM — 8 models</span>
+<span class="code-k">const</span> expenses = <span class="code-k">await</span> prisma
+  .transaction.findMany({
+    where: { userId, type: <span class="code-s">'EXPENSE'</span> }
+  });</pre>
           </div>
         </div>
       </div>
@@ -354,6 +359,23 @@
       <div class="project-card reveal">
         <div class="pc-top">
           <span class="pc-num">02</span>
+          <div class="pc-links">
+            <a href="https://github.com/MOHANX-0001" target="_blank" class="pc-link" title="GitHub">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="pc-icon">📚</div>
+        <h3 class="pc-title">Library Management System</h3>
+        <p class="pc-desc">Full-featured library app with role-based access control for admin and students. Book issue &amp; return with automatic fine calculation, search, and complete transaction tracking via file handling.</p>
+        <div class="pc-techs">
+          <span>Java</span><span>OOP</span><span>File Handling</span><span>Role-Based Access</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="pc-top">
+          <span class="pc-num">03</span>
           <div class="pc-links">
             <a href="https://github.com/MOHANX-0001/Java-Bank-System" target="_blank" class="pc-link" title="GitHub">
               <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -370,7 +392,7 @@
 
       <div class="project-card reveal">
         <div class="pc-top">
-          <span class="pc-num">03</span>
+          <span class="pc-num">04</span>
           <div class="pc-links">
             <a href="https://github.com/MOHANX-0001/Student-Management-System" target="_blank" class="pc-link" title="GitHub">
               <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -387,7 +409,7 @@
 
       <div class="project-card reveal">
         <div class="pc-top">
-          <span class="pc-num">04</span>
+          <span class="pc-num">05</span>
           <div class="pc-links">
             <a href="https://github.com/MOHANX-0001" target="_blank" class="pc-link" title="GitHub">
               <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -404,7 +426,7 @@
 
       <div class="project-card reveal">
         <div class="pc-top">
-          <span class="pc-num">05</span>
+          <span class="pc-num">06</span>
           <div class="pc-links">
             <a href="https://github.com/MOHANX-0001/Calculator" target="_blank" class="pc-link" title="GitHub">
               <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -424,7 +446,7 @@
 
       <div class="project-card reveal">
         <div class="pc-top">
-          <span class="pc-num">06</span>
+          <span class="pc-num">07</span>
           <span class="pc-new">New</span>
           <div class="pc-links">
             <a href="https://github.com/MOHANX-0001" target="_blank" class="pc-link" title="GitHub">
@@ -466,13 +488,13 @@
               <div class="cli-val">+91 93568 73688</div>
             </div>
           </a>
-          <a href="mailto:mohanpawarx1010@gmail.com" class="contact-link-item">
+          <a href="/cdn-cgi/l/email-protection#adc0c2c5ccc3ddccdaccdfd59c9d9c9dedcac0ccc4c183cec2c0" class="contact-link-item">
             <div class="cli-icon">
               <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
             </div>
             <div>
               <div class="cli-label">Email</div>
-              <div class="cli-val">mohanpawarx1010@gmail.com</div>
+              <div class="cli-val"><span class="__cf_email__" data-cfemail="6c0103040d021c0d1b0d1e145d5c5d5c2c0b010d0500420f0301">[email&#160;protected]</span></div>
             </div>
           </a>
           <a href="https://github.com/MOHANX-0001" target="_blank" class="contact-link-item">
@@ -542,13 +564,14 @@
     <div class="footer-links">
       <a href="https://github.com/MOHANX-0001" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/mohan-pawar-dev/" target="_blank">LinkedIn</a>
-      <a href="mailto:mohanpawarx1010@gmail.com">Email</a>
+      <a href="/cdn-cgi/l/email-protection#6d0002050c031d0c1a0c1f155c5d5c5d2d0a000c0401430e0200">Email</a>
+ 
     </div>
-    <div class="footer-copy">Built by Mohan Pawar · 2026</div>
+    <div class="footer-copy">&copy; 2026 Mohan Pawar. Built with purpose.</div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

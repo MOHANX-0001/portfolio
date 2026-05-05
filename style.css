@@ -835,6 +835,93 @@ nav {
   color: var(--text-muted);
 }
 
+/* JARVIS Private Featured Card */
+.project-featured-card.jarvis-card {
+  background: linear-gradient(135deg, #0d0d1a 0%, #0a0e18 50%, #0e0a1a 100%);
+  border-color: rgba(34,211,238,0.2);
+}
+.project-featured-card.jarvis-card::before {
+  background: linear-gradient(90deg, var(--accent2), var(--accent3), var(--accent2));
+}
+.project-featured-card.jarvis-card:hover {
+  border-color: rgba(34,211,238,0.35);
+  box-shadow: 0 30px 80px rgba(34,211,238,0.08);
+}
+
+.pf-label.jarvis-label {
+  color: var(--accent2);
+}
+.pf-label.jarvis-label::before {
+  content: '🔒';
+  font-size: 0.7rem;
+}
+
+.pf-private-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(34,211,238,0.08);
+  border: 1px solid rgba(34,211,238,0.25);
+  color: var(--accent2);
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+.pf-phase-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(167,139,250,0.08);
+  border: 1px solid rgba(167,139,250,0.2);
+  color: var(--accent3);
+  padding: 0.65rem 1.2rem;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.jarvis-code-block {
+  background: #060810;
+  border-color: rgba(34,211,238,0.12);
+  margin-bottom: 1rem;
+}
+
+.jarvis-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.jstat {
+  background: rgba(34,211,238,0.05);
+  border: 1px solid rgba(34,211,238,0.12);
+  border-radius: 8px;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.jstat-n {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--accent2);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.jstat-l {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
 /* Grid Cards */
 .projects-grid {
   display: grid;

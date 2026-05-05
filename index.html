@@ -130,7 +130,7 @@
 
         <div class="about-stats">
           <div class="stat-item reveal">
-            <div class="stat-n" data-target="7">0</div>
+            <div class="stat-n" data-target="8">0</div>
             <div class="stat-l">Projects Built</div>
           </div>
           <div class="stat-item reveal">
@@ -353,6 +353,53 @@
       </div>
     </div>
 
+    <!-- JARVIS — Flagship Private Project -->
+    <div class="project-featured-card jarvis-card reveal">
+      <div class="pf-label jarvis-label">🔒 Flagship Private Project</div>
+      <div class="pf-body">
+        <div class="pf-info">
+          <div class="pf-number">02</div>
+          <h3 class="pf-title">J.A.R.V.I.S v10.0 — Just A Rather Very Intelligent System</h3>
+          <p class="pf-desc">A fully autonomous AI personal assistant inspired by Iron Man's JARVIS. Built across 10 development phases with 30+ interconnected modules. Features a multi-agent parallel architecture (Memory · Reasoning · Tool · Personality agents running simultaneously), autonomous decision loop that acts without being asked, voice wake-word detection, real-time screen context awareness, WhatsApp &amp; Telegram integration, TF-IDF vector memory, task decomposition with dependency graphs, a plugin system, and self-healing with circuit breakers. Kept private as a personal system — not pushed to GitHub.</p>
+          <div class="pf-techs">
+            <span>Node.js</span><span>Express</span><span>Groq SDK</span><span>Anthropic Claude</span><span>WebSocket</span><span>SQLite</span><span>Python</span><span>TTS</span><span>Twilio</span><span>Multi-Agent AI</span>
+          </div>
+          <div class="pf-links">
+            <span class="pf-private-badge">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              Private Repository
+            </span>
+            <span class="pf-phase-badge">v10.0 · 10 Phases · 30+ Modules</span>
+          </div>
+        </div>
+        <div class="pf-visual">
+          <div class="pf-code-block jarvis-code-block">
+<pre><span class="code-c">// 5 agents run in TRUE parallel</span>
+<span class="code-k">const</span> [mem, reason, tools,
+  personality] = <span class="code-k">await</span> Promise.all([
+  memoryAgent(input),
+  reasoningAgent(input, isComplex),
+  toolAgent(input),
+  personalityAgent(input, emotion)
+]);
+
+<span class="code-c">// Autonomous loop — acts without prompt</span>
+<span class="code-k">if</span> (decision.should_act) {
+  <span class="code-k">await</span> deliver(decision.message, {
+    voice: <span class="code-b">true</span>, telegram: <span class="code-b">true</span>
+  });
+}</pre>
+          </div>
+          <div class="jarvis-stats-row">
+            <div class="jstat"><span class="jstat-n">10</span><span class="jstat-l">Phases</span></div>
+            <div class="jstat"><span class="jstat-n">30+</span><span class="jstat-l">Modules</span></div>
+            <div class="jstat"><span class="jstat-n">5</span><span class="jstat-l">AI Agents</span></div>
+            <div class="jstat"><span class="jstat-n">24/7</span><span class="jstat-l">Autonomous</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Other Projects Grid -->
     <div class="projects-grid">
 
@@ -565,7 +612,7 @@
       <a href="https://github.com/MOHANX-0001" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/mohan-pawar-dev/" target="_blank">LinkedIn</a>
       <a href="/cdn-cgi/l/email-protection#6d0002050c031d0c1a0c1f155c5d5c5d2d0a000c0401430e0200">Email</a>
- 
+
     </div>
     <div class="footer-copy">&copy; 2026 Mohan Pawar. Built with purpose.</div>
   </div>
